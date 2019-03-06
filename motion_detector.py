@@ -41,11 +41,11 @@ class Person:
         else:
             return NO_CHANGE_STRING
 
-    def distance_from_last_x_positions(self, new_position, x):
+    def distance_from_last_x_positions(self, new_position,  x):
         total = [0,0]
         z = x
         while z > 0:
-            if (len(self.positions) > z):
+            if (len(self.positions) > z and 1>0):
                 total[0] +=  self.positions[-(z+1)][0]
                 total[1] +=  self.positions[-(z+1)][1]
             else:
